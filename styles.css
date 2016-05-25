@@ -16,26 +16,17 @@ html, body {
     color: #444;
 }
 html {
-  background: url("header2.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url("header2.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 body {
-    text-align: center;
-    background: url("");
-    background-position-x: 50%;
-    background-position-y: 0%;
-    background-size: initial;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
-    background-attachment: fixed;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: rgb(244, 243, 243);
+    z-index: 1;
 }
 header {
+    text-align: center;
     height: 800px;
     position: fixed;
     top: 0;
@@ -73,64 +64,56 @@ header h3 {
 }
 
 .nav {
-  display: flex;
-  position: fixed;
-  flex-direction: column;
-  top: 140px;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 140px;
+    z-index: 10;
 }
 
 .nav li {
-  list-style-type: none;
-  width: 80px;
+    list-style-type: none;
+    width: 80px;
 }
 
 .nav li a{
-  display: block;
-  line-height: 50px;
-  background-color: #444;
-  color: #fff;
-  text-shadow: 1px 1px 0px #000;
+    display: block;
+    line-height: 50px;
+    background-color: #444;
+    color: #fff;
+    text-shadow: 1px 1px 0px #000;
+    border-bottom: 1px solid rgb(239,227,210);
  }
 
- .social {
-   display: flex;
-   position: fixed;
-   flex-direction: column;
-   top: 20px;
-   right: 0px;
+.social {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 20px;
+    right: 0px;
  }
 
- .social li {
-   list-style-type: none;
-   width: 60px;
+.social li {
+    list-style-type: none;
+    width: 50px;
  }
 
- .social li a{
-   display: block;
-   line-height: 20px;
-   background-color: #444;
-   color: #fff;
-   text-shadow: 1px 1px 0px #000;
+.social li a{
+    display: block;
+    padding-top: 6px;
+    background-color: #444;
+    color: #fff;
+    text-shadow: 1px 1px 0px #000;
+border-bottom: 1px solid rgb(239,227,210);
   }
 
-header .social a.github {
-    background-image: url(images/github.png);
-}
-
-header .social a.linkedin {
-    background-image: url(images/github.png);
-}
-
-header .social a.email {
-    background-image: url(images/github.png);
-}
-
  .main {
-     margin: 800px auto 0 auto;
-     width: 100%;
-     background: #fff;
-     position: relative;
-     box-shadow: 0 0 5px rgba(0,0,0,.2);
-     z-index: 3;
-     padding-top: 20px;
+    text-align: center;
+    margin: 800px auto 0 auto;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    z-index: 3;
+    padding-top: 20px;
  }
