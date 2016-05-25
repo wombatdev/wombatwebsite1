@@ -43,3 +43,23 @@ img {
   transform: rotate(360deg);
   box-shadow: 0px 0px 100px 50px #fc0;
 }
+
+.nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+
+.nav li {
+  flex-grow: 1;
+  list-style-type: none;
+}
+
+.nav li a{
+  display:block;
+  line-height:50px;
+  background-color:#444;
+  color: #fff;
+  text-shadow:1px 1px 0px #000;
+  transition:background-color 0.2s;
+ }
