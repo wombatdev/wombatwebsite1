@@ -62,4 +62,5 @@ img {
   color: #fff;
   text-shadow:1px 1px 0px #000;
   transition:background-color 0.2s;
+  outline: 1px solid white;
  }
