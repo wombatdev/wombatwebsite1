@@ -10,38 +10,72 @@
     color: inherit;
 }
 html, body {
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 18px;
-    line-height: 30px;
+    font-family: ProximaNovaLight, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
     color: #444;
-    text-shadow: 1px 1px 0px #fff;
 }
 body {
     text-align: center;
+    background: url("header.jpeg");
+    background-position-x: 50%;
+    background-position-y: 0%;
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(244, 243, 243);
 }
-h1 {
+header {
+    height: 600px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+}
+header .james {
+    padding-top: 75px;
+    margin-top: 0px;
+}
+h2 {
     font-size: 36px;
     line-height: 50px;
     font-weight: bold;
+    color: rgb(244, 243, 243);
 }
 img {
     border-radius: 50%;
 }
+header h2 span {
+    display: block;
+    font-size: 14px;
+    padding-top: 15px;
+    font-weight: normal;
+    color: rgba(255,255,255,0.6);
+    font-family: ProximaNovaLight;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.main {
+    margin: 600px auto 0 auto;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    z-index: 3;
+    padding-top: 20px;
+}
+
+
 .hero {
   outline: 1px solid red;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.portrait {
-  transition: transform 1s, box-shadow 1s;
-}
-
-.portrait:hover {
-  transform: rotate(360deg);
-  box-shadow: 0px 0px 100px 50px #fc0;
 }
 
 .nav {
